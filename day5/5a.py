@@ -28,6 +28,22 @@ class SLL :
                 p +=1
             new_node.next = temp.next
             temp.next = new_node
+
+    def delete(self, value):
+        temp=self.head
+        prev=None
+        if temp.data==value:
+            self.head=self.head.next
+        else:
+            while(temp.data!=value and temp):
+                prev=temp
+                temp=temp.next
+                if temp==None:
+                    print("Value is not present in the list")
+                    return 
+            prev.next=temp.next
+            temp=None
+
     
     def display(self):
         temp = self.head
@@ -49,3 +65,11 @@ list1.display()
 list1.insert(Node(10),1)
 print()
 list1.display()
+
+
+print()
+
+list1.delete(10)       
+list1.display()
+
+list1.delete(60)          #Value is not in the given list
