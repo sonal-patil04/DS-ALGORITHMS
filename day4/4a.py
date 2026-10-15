@@ -18,12 +18,34 @@ class SLL:                      #/SLL-----> Singly Linked List
             while temp.next:
                 temp=temp.next
             temp.next=new_node
+
+    def insert(self, new_node, pos):
+        if pos==1:           #insertion at first position
+            new_node.next = self.head
+            self.head=new_node
+        else:            #insert node from 2nd to last position
+            p = 1
+            temp=self.head
+            while (p!=pos-1):
+                temp=temp.next
+                p+=1
+            new_node.next=temp.next
+            temp.next=new_node
+
+    def print(self):
+        print("List element: ")
+        temp=self.head
+        while temp():
+            print(temp.data)
+            temp=temp.next  
     
     def print(self):
         temp=self.head
         while temp:
             print(temp.data)
             temp=temp.next
+
+    
 
 
 list1=SLL()
