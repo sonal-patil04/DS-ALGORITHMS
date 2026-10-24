@@ -47,9 +47,9 @@ print()
 
 q1.dequeue()
 q1.dequeue()
-q1.dequeue()
-q1.dequeue()
-q1.dequeue()
+# q1.dequeue()
+# q1.dequeue()
+# q1.dequeue()
 
 
 q1.enqueue(Node(50))

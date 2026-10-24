@@ -56,7 +56,7 @@ class SLL:
                 break
         print()
 
-    def delete(self,value):
+    # def delete(self,value):
 
 # Execution
 list1 = SLL()
