@@ -5,7 +5,7 @@ class node:
         self.name = name
         self.priority = pr
         self.next = None
-
+        
 
 class PriorityQueue:
     def __init__(self):
