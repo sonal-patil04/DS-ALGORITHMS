@@ -75,7 +75,6 @@ class PriorityQueue:
         print("Total pending processes:", total)
 
 
-
 pq = PriorityQueue()
 
 pq.enqueue(node(101, "Chrome Browser", 2))
